@@ -31,17 +31,17 @@ class Developer:
                           command=self.exit_developer)
         btn_exit.place(x=1400, y=10, width=120, height=30)
 
-        # ===== Developer 1 =====
-        dev1_frame = Frame(bg_img, bd=4, relief=RIDGE, bg="white")
-        dev1_frame.place(x=200, y=100, width=600, height=700)
-        img1 = Image.open(r"C:\Users\madhu\OneDrive\Desktop\Face_Regonition _Attendance_System\college_images\1_5TRuG7tG0KrZJXKoFtHlSg.jpeg")
-        img1 = img1.resize((200, 200), Image.LANCZOS)
-        self.dev1_img = ImageTk.PhotoImage(img1)
-        dev1_photo = Label(dev1_frame, image=self.dev1_img, bd=2, relief=RIDGE)
-        dev1_photo.pack(pady=15)
-        dev1_text = Label(dev1_frame, text="Name: Madhura Deshmukh\nRole: Developer\nResponsibilities:\n- Attendance Automation\n- System Optimization\n- Face Recognition Module\n- System Testing\n- UI Optimization\n- UI Optimization\n- System Testing\n- Database Integration\n- Model Training\n- Face Detection\n\nEmail: madhurad2005@gmail.com\nContact: 7038286030",
+        # ===== Developer 2 =====
+        dev2_frame = Frame(bg_img, bd=4, relief=RIDGE, bg="white")
+        dev2_frame.place(x=260, y=100, width=500, height=700)
+        img2 = Image.open(r"C:\Users\madhu\OneDrive\Desktop\Face_Regonition _Attendance_System\college_images\sharu.jpg")
+        img2 = img2.resize((200, 200), Image.LANCZOS)
+        self.dev2_img = ImageTk.PhotoImage(img2)
+        dev2_photo = Label(dev2_frame, image=self.dev2_img, bd=2, relief=RIDGE)
+        dev2_photo.pack(pady=15)
+        dev2_text = Label(dev2_frame, text="Name: Sharvari Shukla\nRole: Developer\nResponsibilities:\n- UI Optimization\n- System Testing\n- Database Integration\n- Model Training\n- Face Detection\nResponsibilities:\n- Attendance Automation\n- System Optimization\n\nEmail: sharvarishukla21@gmail.com\nContact: 7058356881",
                           font=("Segoe UI", 14), bg="white", justify=LEFT, anchor="nw", wraplength=460)
-        dev1_text.pack(fill=BOTH, expand=True, padx=15, pady=10)
+        dev2_text.pack(fill=BOTH, expand=True, padx=15, pady=10)
 
        
     def exit_developer(self):

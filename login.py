@@ -22,7 +22,7 @@ class Login:
         self.cursor = self.conn.cursor()
 
         # ================= BACKGROUND =================
-        bg = Image.open(r"C:\Users\madhu\OneDrive\Desktop\Face_Regonition _Attendance_System\college_images\b.jpg")
+        bg = Image.open(r"C:\Users\madhu\OneDrive\Desktop\Face_Regonition _Attendance_System\college_images\bg.jpg")
         bg = bg.resize((self.root.winfo_screenwidth(), self.root.winfo_screenheight()), Image.LANCZOS)
         self.bg = ImageTk.PhotoImage(bg)
         Label(self.root, image=self.bg).place(x=0, y=0, relwidth=1, relheight=1)
